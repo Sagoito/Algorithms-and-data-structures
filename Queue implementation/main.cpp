@@ -158,15 +158,10 @@ int main()
 
     for(int i=0; i<n/2; i++) {
         if(abs(q1.max() - q1.min()) <= v && abs(q2.max() - q2.min()) <= v) {
-
-
             if(sum > abs(q1.getSum() - q2.getSum())) {
-
                     index = i;
                     sum = abs(q1.getSum() - q2.getSum());
             }
-
-
         }
         q1.enqueue(q2.front());
         q2.dequeue();
